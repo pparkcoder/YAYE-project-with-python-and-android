@@ -6,7 +6,16 @@ import pymysql
 #4. 데이터 저장 : 연결자변수.commit()
 #5. MariaDB 연결종료 : 연결자변수.close()
 
-if __name__ == '__main__' :
+def data_preprocessing :
+    # 전처리 함수 구현 예정
+    
+def data_insert :
+    # 전처리 된 데이터 db에 insert 하는 함수 구현 예정
+    
+def data_select :
+    # 음식에 대한 칼로리 등을 select 하는 함수 구현 예정
+
+if __name__ == '__main__' : # 차후에 init으로 
     # 연결
     conn = pymysql.connect(host='IP',user='ID',password='PS',db='DB 명',charset='utf8') 
     # 커서 생성
