@@ -45,8 +45,8 @@ def search_google(search_name, search_limit):
   
     # 폴더 만들기
     savePath = "이미지가 저장될 폴더의 경로" + search_name
-    if not os.path.exists(folder_name) :
-        os.mkdir(folder_name)
+    if not os.path.exists(savePath) :
+        os.mkdir(savePath)
 
     # url 설정
     search_url = "https://www.google.com/search?q=" + str(search_name) + "&hl=ko&tbm=isch"
