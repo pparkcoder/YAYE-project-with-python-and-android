@@ -15,7 +15,7 @@ def data_select() :
     음식 분류를 통해 각 음식에 대한 영양정보를 select
     후에, 부족한 칼로리 및 영양소를 계산한 뒤
     다시 db에 접근하여 필요한 음식을 return -> 필요한 음식의 우선순위를 어떻게 둘지 고민이 필요
-    ```
+    '''
     
 def data_insert() :# 전처리 된 데이터 db에 insert 하는 함수
     data = pd.read_excel("food_db.xlsx")
