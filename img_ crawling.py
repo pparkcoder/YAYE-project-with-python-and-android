@@ -43,12 +43,13 @@ def search_naver(search_name,save_path,start_index):
         response_body = response.read()
         result = json.loads(response_body)
         img_list = result["items"]
+        length = len(img_list)
 
-    for i, img_list in enumerate(img_list, 1):
+    for i, img_list in enumerate(img_list):
         start = time.time()
         # print(img_list['link'])   # 저장 파일명 및 경로
         FileName = os.path.join(save_path, search_name + str(start_index + i) + ".jpg")
-        print(str(i) + "/" + str(len(img_list)) + ' ' + search_name + " 다운로드 중....... Download time : " + str(
+        print(str(i) + "/" + str(length) + ' ' + search_name + " 다운로드 중....... Download time : " + str(
             time.time() - start)[:5] + " 초")
         urllib.request.urlretrieve(img_list["link"], FileName)
         
