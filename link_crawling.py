@@ -2,6 +2,7 @@
 # https://www.lightsky.kr/135
 # http://hleecaster.com/python-web-crawling-with-beautifulsoup/
 # https://rinko.tistory.com/11
+# https://yuda.dev/106
 
 from bs4 import BeautifulSoup
 import requests
