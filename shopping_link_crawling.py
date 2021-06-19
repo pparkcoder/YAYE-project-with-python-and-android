@@ -1,3 +1,7 @@
+# 참고 
+# https://www.lightsky.kr/135
+# http://hleecaster.com/python-web-crawling-with-beautifulsoup/
+
 from bs4 import BeautifulSoup
 import requests
 
