@@ -1,6 +1,7 @@
 # 참고 
 # https://www.lightsky.kr/135
 # http://hleecaster.com/python-web-crawling-with-beautifulsoup/
+# https://rinko.tistory.com/11
 
 from bs4 import BeautifulSoup
 import requests
@@ -10,8 +11,13 @@ encText= "검색할 상품"
 
 # 리뷰순
 url = 'https://search.shopping.naver.com/search/all?origQuery=%EC%82%AC%EA%B3%BC&pagingIndex=1&pagingSize=40&productSet=total&query='+encText+'&sort=review&timestamp=&viewType=list'
+
 # 랭킹순
 #url = "https://search.shopping.naver.com/search/all?query=" + encText
+
+# 유튜브 링크
+youtube_url = 'https://www.youtube.com/results?search_query='+encText
+
 html = requests.get(url)
 soup = BeautifulSoup(html.text, 'lxml')
 cnt = len(soup.find_all('div', class_='basicList_title__3P9Q7'))
@@ -35,4 +41,8 @@ for i in range(0, cnt):
 
     show = {'제품명': title, '가격': price, 'url': url}
 
+# 검색한 음식 상품 리스트
 print(shopping_link)
+
+# 검색한 음식 조리법 유튜브 링크
+print(youtube_url)
