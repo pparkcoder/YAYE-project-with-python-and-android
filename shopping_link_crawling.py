@@ -6,6 +6,8 @@ from bs4 import BeautifulSoup
 import requests
 
 encText= "검색할 상품"
+#encText = urllib.parse.quote("검색할 상품") - incoding
+
 # 리뷰순
 url = 'https://search.shopping.naver.com/search/all?origQuery=%EC%82%AC%EA%B3%BC&pagingIndex=1&pagingSize=40&productSet=total&query='+encText+'&sort=review&timestamp=&viewType=list'
 # 랭킹순
