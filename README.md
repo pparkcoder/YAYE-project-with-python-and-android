@@ -4,7 +4,7 @@
 ## yoloV3 설치 및 실행과정 (순서 중요)
 ### 필자 환경
    - ### Windows 10 / Visual Studio 2015 / CUDA 10.1, cuDNN 7.6.3 / openCV 4.0.1 / compute capability 6.1
-   - 자신이 필요로하는 환경이 없다면 ***동일하게 맞추길 권장하는 바***
+   - 자신이 필요로하는 환경이 없다면 ***동일하게 맞추길 권장하는 바*** (compute capability 제외)
 <br><br>
 1. Visual Studio 2015 다운
    - 2017, 2019 버전은 안되면 해결할 수는 있으나, 정신건강에 안좋으니 ***그냥 2015 다운***
