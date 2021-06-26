@@ -61,7 +61,7 @@
     - [다운받기](https://pjreddie.com/media/files/yolov3.weights)
     - darknet-master -> bulid -> darknet -> x64에 yolo3.weights 파일 옮겨주기
 <br><br>
-9. darknet.sln 실행 
+9. darknet.sln 빌드 실행 
   - ![build-success](https://user-images.githubusercontent.com/84856055/123503628-271fe080-d68f-11eb-90fd-d4b6c7e38690.JPG)
   - 위의 사진처럼 나왔다면 성공
   - darknet-master -> bulid -> darknet -> x64에 darknet.exe 파일 생성
