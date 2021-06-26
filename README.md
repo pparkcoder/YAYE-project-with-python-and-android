@@ -4,12 +4,13 @@
 ## yoloV3 설치 및 실행과정 (순서 중요)
 ### 필자 환경
    - ### Windows 10 / Visual Studio 2015 / CUDA 10.1, cuDNN 7.6.3 / openCV 4.0.1 / compute capability 6.1
-   - 자신이 필요로하는 환경이 없다면 ***동일하게 맞추길 권장하는 바*** (compute capability 제외)
+   - 자신이 필요로하는 환경이 없다면 ***동일하게 맞추길 권장하는 바*** 
+   - compute capability는 각자 확인 필요
 <br><br>
 1. Visual Studio 2015 다운
    - 2017, 2019 버전은 안되면 해결할 수는 있으나, 정신건강에 안좋으니 ***그냥 2015 다운***
 <br><br>
-2. NVIDI CUDA 10.1 설치
+2. NVIDIA CUDA 10.1 설치
    - [설치링크](https://developer.nvidia.com/cuda-10.1-download-archive-base?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exelocal)
    - ![1](https://user-images.githubusercontent.com/84856055/123502744-9abeef00-d689-11eb-8dc6-2f04a1e51c4b.JPG)
 <br><br>
