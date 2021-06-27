@@ -84,21 +84,30 @@ def search_google(search_name,save_path) :
         pass
 
     # 이미지 개수
-    links = []
+   links = []
     images = driver.find_elements_by_css_selector("img.rg_i.Q4LuWd")
-    for image in images:
-        if image.get_attribute("src") != None:
-            links.append(image.get_attribute("src"))
-    time.sleep(2)
+    for i in range(1, len(images)):
+        try:
+            driver.find_element_by_xpath('//*[@id="islrg"]/div[1]/div[' + str(i) + ']/a[1]/div[1]/img').click()
+            links.append(driver.find_element_by_xpath('//*[@id="Sva75c"]/div/div/div[3]/div[2]/c-wiz/div/div[1]/div[1]/div[2]/div[1]/a/img').get_attribute('src'))
+            driver.find_element_by_xpath('//*[@id="Sva75c"]/div/div/div[2]/a').click()
+            print(keyword + ' 링크 수집 중..... number :' + str(i) + '/' + str(len(images)))
+        except:
+            continue
 
     # 이미지 다운로드
-    for k, i in enumerate(links):
-        url = i
-        start = time.time()
-        urllib.request.urlretrieve(url, save_path + search_name + str(
-            k + 1) + ".jpg")
-        print(str(k + 1) + '/' + str(len(links)) + ' ' + search_name + " 다운로드 중....... Download time : " + str(
-            time.time() - start)[:5] + " 초")
+    forbidden = 0
+       for k, i in enumerate(links):
+        try:
+            url = i
+            start = time.time()
+            urllib.request.urlretrieve(url, save_path + search_name + str(
+                k + 1) + ".jpg")
+            print(str(k + 1) + '/' + str(len(links)) + ' ' + search_name + " 다운로드 중....... Download time : " + str(
+                time.time() - start)[:5] + " 초")
+        except:
+            forbidden += 1
+            continue
         
     print(search_name + " ---다운로드 완료---")
     driver.close()
