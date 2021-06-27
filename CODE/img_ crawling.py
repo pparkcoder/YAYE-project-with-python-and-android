@@ -8,23 +8,6 @@ import json
 import time
 # 코드별 설명은 차후에 진행 예정
 
-#def search_google(search_name, search_limit):
-#
-#     # url 설정
-#     search_url = "https://www.google.com/search?q=" + str(search_name) + "&hl=ko&tbm=isch"
-#     browser = webdriver.Chrome('chromedriver가 설치된 폴더의 경로')
-#     browser.get(search_url)
-#
-#     image_count = len(browser.find_elements_by_tag_name("img"))
-#
-#     browser.implicitly_wait(2)
-#
-#     # 이미지 크롤링 + 폴더에 저장
-#     for i in range(search_limit):
-#         image = browser.find_elements_by_tag_name("img")[i]
-#         image.screenshot(savePath + "/" + search_name + str(i) + ".png")
-#     browser.close()
-
 # 네이버 api 이용
 def search_naver(search_name,save_path,start_index):
     print("naver start")
@@ -125,4 +108,4 @@ if __name__ == "__main__":
     search_name = input("검색하고 싶은 키워드 : ")
     save_path = make_folder(search_name)
     start_index = search_google(search_name,save_path)
-    search_naver(search_name,save_path,start_index)
+    #search_naver(search_name,save_path,start_index)
