@@ -1,6 +1,6 @@
 ## yolo mark 설치 및 실행과정
 ### yolo mark는 이미지 파일에 직접 Bounding Box를 그려줌으로써 Box의 좌표를 도출해 주는 도구
-선행과정 : ***Visual Studio 2015, openCV 4.0.1 가 설치되어 있어야 함*** ([참고](https://github.com/pparkcoder/YAYE_project))
+선행과정 : ***Visual Studio 2015, openCV 4.0.1 이 설치되어 있어야 함*** ([참고](https://github.com/pparkcoder/YAYE_project))
 1. yolo mark 다운
     - [설치 링크](https://github.com/AlexeyAB/Yolo_mark)
 <br><br>
@@ -10,11 +10,11 @@
 3. Visual Studio 2015 환경 설정
     - 프로젝트 -> 속성 -> 구성 : Release, 플랫폼 : x64 설정
     - C/C++ -> 일반 -> 추가 포함 디렉토리 편집
-    - openCV 각 폴더에서 include 폴더 경로 넣어주기 (**자신의 경로 넣기**)
+    - openCV 폴더에서 include 폴더 경로 넣어주기 (**자신의 경로 넣기**)
         - ![1](https://user-images.githubusercontent.com/84856055/123503153-1d48ae00-d68c-11eb-917b-c9cdbe42a8a9.JPG) 
     <br><br>
     - 링커 -> 일반 -> 추가 라이브러리 디렉터리 편집
-    - openCV, CUDA, cuDNN 각 폴더에서 lib + @ 폴더 경로 넣어주기 (**자신의 경로 넣기**)
+    - openCV 폴더에서 lib + @ 폴더 경로 넣어주기 (**자신의 경로 넣기**)
         - ![3](https://user-images.githubusercontent.com/84856055/123503156-1fab0800-d68c-11eb-87d9-06b907e5ce2c.JPG)
 <br><br>
 4. 각종 파일 옮기기
