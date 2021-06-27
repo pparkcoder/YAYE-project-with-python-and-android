@@ -1,6 +1,8 @@
 ## yolo mark 설치 및 실행과정
 ### yolo mark는 이미지 파일에 직접 Bounding Box를 그려줌으로써 Box의 좌표를 도출해 주는 도구
 선행과정 : ***Visual Studio 2015, openCV 4.0.1 이 설치되어 있어야 함*** ([참고](https://github.com/pparkcoder/YAYE_project))
+<br>
+#### 안되는 경우, 3번 4번 꼼꼼하게 확인 후 다시 진행
 1. yolo mark 다운
     - [설치 링크](https://github.com/AlexeyAB/Yolo_mark)
 <br><br>
