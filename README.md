@@ -2,7 +2,7 @@
 딥러닝을 이용한 음식관련 프로젝트
 <br><br>
 ## yoloV3 설치 및 실행과정 (순서 중요)
-### 필자 환경
+### 필자 환경 (Compute capability가 6.1이 아닌 경우 뒤로가기)
    - ### Windows 10 / Visual Studio 2015 / CUDA 10.1, cuDNN 7.6.3 / openCV 4.0.1 / compute capability 6.1
    - 자신이 필요로하는 환경이 없다면 ***동일하게 맞추길 권장하는 바*** 
    - compute capability는 각자 확인 필요
